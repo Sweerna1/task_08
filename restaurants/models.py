@@ -5,3 +5,7 @@ class Restaurant(models.Model):
     description = models.TextField()
     opening_time = models.TimeField()
     closing_time = models.TimeField()
+    media = models.ImageField(null=True)
+
+    def __str__(self):
+    	return self.name
